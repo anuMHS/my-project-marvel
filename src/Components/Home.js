@@ -19,7 +19,7 @@ const Home = () => {
     setMarvelChars([]);
     const url = search
       ? `https://gateway.marvel.com:443/v1/public/characters?nameStartsWith=${search}&ts=1&apikey=${API_KEY}&hash=${HASH}`
-      : `http://gateway.marvel.com/v1/public/characters?ts=1&apikey=${API_KEY}&hash=${HASH}`;
+      : `https://gateway.marvel.com/v1/public/characters?ts=1&apikey=${API_KEY}&hash=${HASH}`;
 
     fetch(url)
       .then((response) => {
